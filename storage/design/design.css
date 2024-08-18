@@ -952,3 +952,10 @@ div li {
 }
 
 /* custom scrollbar styling end */
+
+/* selection styles */
+
+::selection {
+    background-color: rgb(253, 88, 59);
+    color: white;
+}
