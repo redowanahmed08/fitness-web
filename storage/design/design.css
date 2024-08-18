@@ -1,0 +1,938 @@
+* {
+    margin: 0;
+}
+
+/* shared styles */
+.white {
+    color: white;
+}
+
+.descrip {
+    color: rgb(139, 139, 139);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+#hamburger {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.header-container {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.315) 100%);
+}
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.font-inter-descrip {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.font-miama {
+    font-family: 'Miama', sans-serif;
+    font-size: 80px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 36px;
+    padding: 0px;
+}
+
+.ul-content {
+    padding: 0px 0px;
+    padding-top: 8px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+    padding-right: 20px;
+}
+
+ul li a {
+    color: rgba(255, 255, 255, 0.797);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.active {
+    background-color: rgb(253, 92, 63);
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-title {
+    font-size: 32px;
+    color: rgb(253, 92, 63);
+    font-style: italic;
+}
+
+.hero-pic {
+    width: 300px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.hero-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 70px;
+}
+
+.hero-descrip {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.hero-card-container {
+    position: relative;
+}
+
+.tst {
+    position: relative;
+}
+
+.hero-card-1 {
+    position: absolute;
+    width: 56%;
+    height: 17%;
+    left: 65%;
+    top: 30%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-card-2 {
+    position: absolute;
+    width: 56%;
+    height: 16%;
+    right: 70%;
+    top: 75%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero-card-circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    top: 28%;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.hero-container {
+    margin: 80px 20px;
+    padding-right: 120px;
+}
+
+.btn-primary {
+    background-color: rgb(253, 92, 63);
+    color: white;
+    padding: 12px 45px;
+    border-radius: 50px;
+    font-family: inter;
+    border: none;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.btn-2 {
+    background-color: transparent;
+    color: white;
+    padding: 12px 45px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.habit-section {
+    padding-top: 70px;
+}
+
+.habit-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.habit-descrip {
+    color: rgb(139, 139, 139);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.image {
+    border-radius: 50%;
+    width: 140px;
+    margin-bottom: 15px;
+}
+
+.text {
+    margin-right: 45px;
+    text-align: center;
+}
+
+.img-text-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 60px;
+    margin-bottom: 100px;
+}
+
+.img-title {
+    margin-bottom: 5px;
+}
+
+.img-title-descrip {
+    color: rgb(139, 139, 139);
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Run Card Section */
+.run-card-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.run-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 835px;
+    height: 250px;
+    display: flex;
+}
+
+.run-card-title {
+    font-size: 45px;
+    margin-bottom: 10px;
+    padding-right: 130px;
+}
+
+.run-card-descrip {
+    color: rgb(139, 139, 139);
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+
+.run-img {
+    width: 370px;
+    border-radius: 20px;
+}
+
+/* Traning and Exercise Section */
+.training-container {
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.training-title {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.training-descrip {
+    color: rgb(116, 116, 116);
+}
+
+/* BMI Calculator Section */
+.bmi-container {
+    color: white;
+}
+
+.bmi-title {
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.bmi-descrip {
+    color: rgb(130, 130, 130);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.bmi-content-container {
+    height: 440px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.bmi-gap {
+    gap: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bmi-calculate-title {
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.bmi-calculate-descrip {
+    color: #747474;
+    margin-bottom: 30px;
+}
+
+.bmi-chart-title {
+    padding-bottom: 35px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    width: 110px;
+}
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.bmi-content-2 {
+    max-width: 600px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.form-select {
+    padding: 13px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: gray;
+    box-sizing: border-box;
+    width: 34%;
+}
+
+.form-select-2 {
+    padding: 13px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: gray;
+    box-sizing: border-box;
+    width: 69%;
+    margin-bottom: 17px;
+    outline: none;
+}
+
+.form-input, .form-select {
+    margin-bottom: 15px;
+    padding: 13px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: gray;
+    outline: none;
+}
+
+.form-input {
+    padding: 13px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+.form-input:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 600px) {
+    .form-select {
+        padding-right: 20px;
+    }
+}
+
+::selection {
+    background-color: rgb(253, 88, 59);
+    color: white;
+}
+
+.training-single-box h4 {
+    color: white;
+  }
+  .training-single-box span {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+  }
+  .training-single-box {
+    position: relative;
+    height: 300px;
+  }
+  
+  .training-single-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .trainer-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 18px;
+    border-radius: 10px;
+    width: 70%;
+  }
+
+.team-title{
+    font-size: 33px;
+    margin-top: 75px;
+}
+
+  .team-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 85px;
+  }
+
+  .name {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+  }
+  .meet-title-box {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .meet-title-box h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  .meet-title-box p {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 50px;
+  }
+
+/* Membership Plan Section */
+
+.membership-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.section-descrip{
+    color: #7E7E7E;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 12px;
+    width: 295px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.plan-price {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.plan-features li {
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+@media (max-width: 768px) {
+    .membership-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 95%;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+}
+
+  
+/* footer section */
+.footer-container {
+    height: 380px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.footer-site-name {
+    font-size: 50px;
+    font-style: italic;
+    color: tomato;
+    margin-bottom: 15px;
+}
+
+.footer-descrip {
+    color: #747474;
+}
+
+.footer-links-title {
+    color: white;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: #7c7c7c;
+}
+
+div li {
+    list-style: none;
+    margin-bottom: 7px;
+}
+
+.footer-content-margin {
+    margin-top: 70px;
+    display: flex;
+    gap: 100px;
+    margin-bottom: 90px;
+}
+
+.footer-copyright hr {
+    opacity: 0.2;
+    margin: 0px 230px 20px 230px;
+}
+
+.footer-copyright p {
+    color: #848484;
+    text-align: center;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0000008b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+.run-card-section,
+.habit-section,
+.training-container,
+.bmi-container,
+.team-card,
+.footer-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+
+/* Responsive */
+
+@media (max-width: 576px) {
+    #hamburger {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .ul-content {
+        display: none;
+    }
+
+    .ul-content.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .card-title{
+        font-size: 24px;
+        padding-right: 20px;
+    }
+
+    .descrip{
+        font-size: 13px;
+        padding-right: 20px;
+    }
+
+    ul{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-pic {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    .hero-title {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .hero-container {
+        padding-right: 0;
+    }
+
+    .run-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .run-card-title,
+    .run-card-descrip {
+        padding-right: 0;
+    }
+
+    .run-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .habit-title {
+        font-size: 35px;
+    }
+
+    .habit-descrip {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        max-width: 90%;
+    }
+
+    #hamburger {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .ul-content {
+        display: none;
+    }
+
+    .ul-content.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .img-text-container {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .bmi-container {
+        padding: 0 20px;
+    }
+
+    .bmi-content-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .bmi-gap {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    table {
+        width: 100%;
+        text-align: center;
+    }
+
+    .team-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-content-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .hero-descrip {
+        font-size: 12px;
+    }
+
+    .btn-primary,
+    .btn-2 {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+
+    .habit-title {
+        font-size: 30px;
+    }
+
+    .habit-descrip {
+        font-size: 14px;
+    }
+
+    .run-card {
+        padding: 20px;
+    }
+
+    .run-card-title {
+        font-size: 35px;
+    }
+
+    .run-card-descrip {
+        font-size: 14px;
+    }
+
+    .training-title {
+        font-size: 30px;
+    }
+
+    .bmi-title {
+        font-size: 30px;
+    }
+
+    .team-title {
+        font-size: 30px;
+    }
+
+    .team-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-container {
+        height: auto;
+    }
+
+    .footer-content-margin {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-copyright hr {
+        margin: 0 50px 20px 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .trainer-box {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    }
+
+    .training-single-box {
+        height: 250px;
+    }
+
+    .team-title {
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+
+    .meet-title-box {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .trainer-box {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .training-single-box {
+        height: 300px;
+    }
+
+    .team-title {
+        font-size: 2rem;
+        margin-top: 40px;
+    }
+
+    .meet-title-box {
+        width: 90%;
+    }
+
+    .meet-title-box h1 {
+        font-size: 2rem;
+    }
+
+    .meet-title-box p {
+        font-size: 1rem;
+    }
+
+    .name {
+        bottom: 20px;
+        left: 15px;
+    }
+}
