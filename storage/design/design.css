@@ -760,6 +760,33 @@ div li {
         cursor: pointer;
     }
 
+    .hero-card-1, .hero-card-2{
+        height: 20%;
+        width: 60%;
+    }
+
+    .hero-card-1{
+        width: 68%;
+        height: 22%;
+        left: 55%;
+    }
+
+    .hero-card-2{
+        width: 70%;
+        height: 22%;
+        right: 55%;
+        top: 70%;
+    }
+
+    .hero-card-num-1{
+        font-size: 30px;
+        padding-right: 20px;
+    }
+
+    .play-icon{
+        padding-right: 15px;
+    }
+
     .ul-content {
         display: none;
     }
