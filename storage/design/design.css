@@ -1,6 +1,9 @@
+/* browser defult margin, padding reset */
+
 * {
     margin: 0;
 }
+
 
 /* shared styles */
 .white {
@@ -11,22 +14,31 @@
     color: rgb(139, 139, 139);
 }
 
+.center {
+    text-align: center;
+}
+
+/* shared style end */
+
 body {
     background-color: rgb(0, 0, 0);
     overflow-x: hidden;
 }
 
-#hamburger {
-    display: none;
+
+/* section styling  */
+.run-card-section,
+.habit-section,
+.training-container,
+.bmi-container,
+.team-card,
+.footer-container {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
-.center {
-    text-align: center;
-}
-
-.header-container {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.315) 100%);
-}
+/* font styles */
 
 .font-inter {
     font-family: "Inter", sans-serif;
@@ -45,6 +57,14 @@ body {
 .font-miama {
     font-family: 'Miama', sans-serif;
     font-size: 80px;
+}
+
+/* font styles end */
+
+/* navigation meny styles */
+
+#hamburger {
+    display: none;
 }
 
 nav {
@@ -99,6 +119,13 @@ ul a {
     font-style: italic;
 }
 
+/* navigation menu styles end */
+
+/* hero section styles start */
+.header-container {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0.315) 100%);
+}
+
 .hero-pic {
     width: 300px;
     margin-right: 20px;
@@ -129,10 +156,6 @@ ul a {
 }
 
 .hero-card-container {
-    position: relative;
-}
-
-.tst {
     position: relative;
 }
 
@@ -177,6 +200,10 @@ ul a {
     padding-right: 120px;
 }
 
+/* hero section styling end */
+
+/* button styles start */
+
 .btn-primary {
     background-color: rgb(253, 92, 63);
     color: white;
@@ -196,6 +223,10 @@ ul a {
     border: 1px solid white;
     cursor: pointer;
 }
+
+/* button styles end */
+
+/* habit section styles start */
 
 .habit-section {
     padding-top: 70px;
@@ -241,7 +272,9 @@ ul a {
     margin-top: 15px;
 }
 
-/* Run Card Section */
+/* habit section styles end */
+
+/* Run Card Section Start */
 .run-card-section {
     display: flex;
     justify-content: center;
@@ -276,23 +309,10 @@ ul a {
     border-radius: 20px;
 }
 
-/* Traning and Exercise Section */
-.training-container {
-    color: white;
-    margin-bottom: 100px;
-    text-align: center;
-}
+/* Run Crad Section Styling end */
 
-.training-title {
-    font-size: 40px;
-    margin-bottom: 5px;
-}
+/* BMI Calculator Section Start */
 
-.training-descrip {
-    color: rgb(116, 116, 116);
-}
-
-/* BMI Calculator Section */
 .bmi-container {
     color: white;
 }
@@ -419,10 +439,9 @@ td {
     }
 }
 
-::selection {
-    background-color: rgb(253, 88, 59);
-    color: white;
-}
+/* bmi section styling end */
+
+/* meet our team section start */
 
 .training-single-box h4 {
     color: white;
@@ -491,7 +510,9 @@ td {
     margin-bottom: 50px;
   }
 
-/* Membership Plan Section */
+/* meet our team scetion end */
+
+/* Membership Plan Section Start */
 
 .membership-section {
     text-align: center;
@@ -572,8 +593,10 @@ td {
     }
 }
 
-  
-/* footer section */
+ /* Meet Our Team Section end */
+
+/* footer section start*/
+
 .footer-container {
     height: 380px;
     border-radius: 25px;
@@ -633,33 +656,9 @@ div li {
     text-align: center;
 }
 
-/* custom scrollbar */
-::-webkit-scrollbar {
-    width: 7px;
-}
+/* footer section end */
 
-::-webkit-scrollbar-track {
-    background: #0000008b;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: tomato;
-    border-radius: 10px;
-}
-
-.run-card-section,
-.habit-section,
-.training-container,
-.bmi-container,
-.team-card,
-.footer-container {
-    max-width: 100%;
-    overflow-x: hidden;
-    margin: 0 auto;
-}
-
-
-/* Responsive */
+/* Website Responsive Styles */
 
 @media (max-width: 576px) {
     #hamburger {
