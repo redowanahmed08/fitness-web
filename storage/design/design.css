@@ -760,8 +760,6 @@ div li {
         cursor: pointer;
     }
 
-    
-
     .ul-content {
         display: none;
     }
@@ -814,7 +812,7 @@ div li {
     .footer-content-container {
         flex-direction: column;
         gap: 20px;
-        padding: 15px;
+        padding: 20px;
     }
 }
 
