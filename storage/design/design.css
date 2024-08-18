@@ -935,3 +935,20 @@ div li {
         left: 15px;
     }
 }
+
+/* custom scrollbar styling */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0000008b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+/* custom scrollbar styling end */
